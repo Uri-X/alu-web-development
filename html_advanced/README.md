@@ -94,4 +94,4 @@ In future iterations, I will add:
 
 - Philbert Kuria 
 
-![Design Preview](./images/design-preview.png)
+![Design Preview](https://github.com/Uri-X/alu-web-development/issues/1#issue-2526372653)
