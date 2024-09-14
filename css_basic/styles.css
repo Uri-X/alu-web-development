@@ -1,87 +1,82 @@
-/* General Body Styles */
+/* General Layout Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.2rem;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #ffd700; /* Gold color to make it pop */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 60px; /* Add margin-bottom to avoid content being hidden by the footer */
+}
+
+/*article {
+    background: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    overflow-y: auto;
+}*/
+article {
+    background: #fff0e1; /* Light peach background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-left: 5px solid #ffd700; /* Gold left border */
+    font-family: 'Georgia', serif;
     color: #333;
 }
 
-/* Header Navigation Styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+article h1 {
+    color: #cc5500; /* Copper color for the title */
 }
 
-header ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+article h2, article h3 {
+    color: #0066cc; /* Blue for the subheadings */
 }
 
-header ul li {
-    display: inline;
-    margin: 0 15px;
+article p {
+    line-height: 3.0;
 }
 
-header ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-header ul li a:hover {
-    color: #ddd;
-}
-
-/* Main Content Styles */
-main {
-    padding: 20px;
-}
-
-/* Article Styles */
-article {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-article img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0;
-}
-
-/* Aside Styles */
 aside {
     background: #e0e0e0;
     padding: 10px;
-    margin-top: 10px;
     border-radius: 5px;
     font-style: italic;
+    flex: 1;
+    overflow-y: auto;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    /* background-color: #342754;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
+    z-index: 10; */
+     /* Ensure footer is above other content */
 }
 
-footer a {
-    color: #ffd700;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+#aidi{
+    background-color: rgb(142, 70, 70);
 }
